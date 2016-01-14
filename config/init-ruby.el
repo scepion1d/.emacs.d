@@ -20,6 +20,7 @@
 ; Enable and configure line numbers
 (add-hook 'ruby-mode-hook 'linum-mode)
 (setq linum-format " %d")
+(ac-linum-workaround)
 
 ; Highlight current line number
 (require-package 'hlinum)
