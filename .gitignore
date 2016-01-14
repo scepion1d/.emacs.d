@@ -1,12 +1,4 @@
+ac-comphist.dat
 auto-save-list
-bookmarks
 elpa
-eshell
-tramp
-*~
 .*
-session.*
-swank
-*.elc
-config/common-lisp/HyperSpec
-url
