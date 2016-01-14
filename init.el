@@ -28,6 +28,8 @@
 
 (add-config-load-path)
 
+(require-package 'neotree)
+
 (require 'init-visual)
 (require 'init-base)
 (require 'init-code)
