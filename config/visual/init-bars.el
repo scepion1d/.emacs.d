@@ -1,5 +1,6 @@
 
-(when (fboundp 'menu-bar-mode)
+;(when (fboundp 'menu-bar-mode)
+(when (not (display-graphic-p))
   (menu-bar-mode -1))
 
 (when (fboundp 'tool-bar-mode)
