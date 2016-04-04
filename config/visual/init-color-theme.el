@@ -1,7 +1,7 @@
-
 (require-package 'spacegray-theme)
-
-(load-theme 'spacegray t)
+(require-package 'material-theme)
+(require-package 'flatui-theme)
+(load-theme 'flatui t)
 
 (eval-after-load "company"
  '(progn
