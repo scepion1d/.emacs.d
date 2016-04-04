@@ -22,7 +22,13 @@
 (rename-minor-mode "yasnippet" yas-minor-mode " Y")
 (rename-minor-mode "subword" subword-mode nil)
 
-(setq-default projectile-mode-line
- '(:eval (format " PRJ[%s]" (projectile-project-name))))
+;(setq-default projectile-mode-line
+; '(:eval (format " PRJ[%s]" (projectile-project-name))))
+
+(setq projectile-mode-line
+  '(:eval
+    (if (file-remote-p default-directory)
+        " Projectile[*remote*]"
+      (format " Projectile[%s]" (projectile-project-name)))))
 
 (provide 'init-diminish)
