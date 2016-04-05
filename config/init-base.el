@@ -36,5 +36,6 @@
 (require 'init-diminish)
 (require 'init-discover)
 (require 'init-projectile)
+(require 'init-exec-path-from-shell)
 
 (provide 'init-base)
