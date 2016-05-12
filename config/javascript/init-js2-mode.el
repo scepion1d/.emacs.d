@@ -10,13 +10,6 @@
               js2-strict-trailing-comma-warning nil
               js2-strict-inconsistent-return-warning nil)
 
-(add-hook 'js2-mode-hook
-          (lambda ()
-            (electric-indent-mode -1)
-
-            (define-key js2-mode-map (kbd "M-j")
-              (lambda ()
-                (interactive)
-                (join-line -1)))))
-
+(add-hook 'js2-mode-hook '(lambda ()
+                              (local-set-key (kbd "RET") 'newline-and-indent)))
 (provide 'init-js2-mode)
